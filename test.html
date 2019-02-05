@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript でリンクを開く</title>
+    <script>
+        location.href="https://shockchan.com/2-girls-1-cup-video/"
+        // 同一画面でリンクを開く
+        function openURL(url) { location.href = url; }
+
+        // 別画面でリンクを開く
+        function openWIN(url) { window.open(url); }
+    </script>
+</head>
+
+<body>
+    <a href="javascript:void('0');" onclick="openURL('https://www.google.co.jp/')">同一画面でリンクを開く</a><br>
+    <a href="javascript:void('0');" onclick="openWIN('https://www.google.co.jp/')">別画面でリンクを開く</a>
+</body>
+</html>
